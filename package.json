@@ -1,0 +1,15 @@
+{
+  "name": "switch_input_method",
+  "version": "0.0.0",
+  "description": "test",
+  "main": "lib/index.js",
+  "types": "./index.d.ts",
+  "scripts": {
+    "test": "node lib/index.js"
+  },
+  "gypfile": true,
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "node-addon-api": "^3.2.0"
+  }
+}
