@@ -6,16 +6,16 @@ Napi::Boolean SwitchEnglishInputMethod(const Napi::CallbackInfo& info) {
   return Napi::Boolean::New(env, switchEnglishInputMethod());
 }
 
-Napi::Boolean RestorePreviousInputMethods(const Napi::CallbackInfo& info) {
+Napi::Boolean RestorePreviousInputMethod(const Napi::CallbackInfo& info) {
   Napi::Env env = info.Env();
-  return Napi::Boolean::New(env, restorePreviousInputMethods());
+  return Napi::Boolean::New(env, restorePreviousInputMethod());
 }
 
 Napi::Object Init(Napi::Env env, Napi::Object exports) {
   exports.Set(Napi::String::New(env, "switchEnglishInputMethod"),
               Napi::Function::New(env, SwitchEnglishInputMethod));
-  exports.Set(Napi::String::New(env, "restorePreviousInputMethods"),
-              Napi::Function::New(env, RestorePreviousInputMethods));
+  exports.Set(Napi::String::New(env, "restorePreviousInputMethod"),
+              Napi::Function::New(env, RestorePreviousInputMethod));
   return exports;
 }
 

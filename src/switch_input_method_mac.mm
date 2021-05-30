@@ -14,7 +14,7 @@ bool switchEnglishInputMethod () {
     return status == noErr;
 }
 
-bool restorePreviousInputMethods() {
+bool restorePreviousInputMethod() {
     if ([prevMethod length] == 0) {
         return false;
     }
