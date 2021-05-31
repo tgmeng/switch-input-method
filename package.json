@@ -1,9 +1,15 @@
 {
-  "name": "switch_input_method",
-  "version": "0.0.0",
+  "name": "switch-input-method",
+  "version": "0.1.0",
   "description": "test",
   "main": "lib/index.js",
-  "types": "./index.d.ts",
+  "types": "switch-input-method.d.ts",
+  "files": [
+    "lib",
+    "src",
+    "binding.gyp",
+    "switch-input-method.d.ts"
+  ],
   "scripts": {
     "test": "node lib/index.js"
   },
